@@ -22,7 +22,8 @@ const Home = () => {
   // Requests the first 20 results of the entire Rick and Morty character list.
   useEffect(() => {
     setResults(getCharacters(api));
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
 
   const getCharacters = endpoint => {
     fetch(endpoint)
