@@ -26,18 +26,6 @@ The following is a prioritized list of features.
 - react-router-dom
 
 
-# Todos
-
-## API Call for All Characters
-
-1. DONE - On page load, an api call should be made to get all of the characters from the database.
-2. DONE - Save the api response in state on the Rendered Cards component.
-
-## API Call for Filtered Results
-
-1. DONE - The results of the filtered call.
-
-
 ## Characters
 
 API Endpoint:
@@ -90,7 +78,7 @@ local storage to store To-Do items. The To-Do list item should have a remove but
 the list and the checkbox to mark it as complete (Upon reloading, the data in the list should not
 change). this was implemented
 
-# Getting Started with Create React App
+# Getting Started 
 
 To run the app locally, clone the repository, navigate to it's directory.
 
