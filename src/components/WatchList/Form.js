@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../App.css'
+import './style.scss'
 const  Form = ({setInputText, todos, setTodos, inputText, setStatus })  => {
 
   const inputTextHandler = (e) => {
@@ -21,15 +21,13 @@ const  Form = ({setInputText, todos, setTodos, inputText, setStatus })  => {
   return (
     <div>
       <form className='flex'>
-        <input value={inputText} onChange={inputTextHandler} type='text' className='todo' />
-        <button onClick={submitHandler} className='tod-button'> +</button>
-        <div className='select'>
+        <input value={inputText} onChange={inputTextHandler} type='text' className='input' />
+        <button onClick={submitHandler} className='tod-button'> ADD TODO</button>
           <select onClick={statushandler}>
-            <option value='all'>all</option>
-            <option value='completed'>complete</option>
-            <option value='uncompleted'>uncomplete</option>
+            <option value='all'>All</option>
+            <option value='completed'>COMPLETED</option>
+            <option value='uncompleted'>UNCOMPLETED</option>
           </select>
-        </div>
       </form>
     </div>
   )

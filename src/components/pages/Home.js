@@ -9,6 +9,7 @@ import characteropedia from '../../assets/Characteropedia.svg';
 import icon from '../../assets/icon-RickAndMorty-NoSearchResults.svg';
 // Components
 import CardPage from '../CardPage/CardPage';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [results, setResults] = useState(null);
@@ -76,6 +77,11 @@ const Home = () => {
             src={characteropedia}
             alt='characteropedia'
           />
+          <div className='watchlist'>
+            <Link to='watchlist'>
+            My WatchList
+            </Link>
+            </div>
         </div>
         <div className='search-form'>
           <form onSubmit={handleSubmit(onSubmit)}>

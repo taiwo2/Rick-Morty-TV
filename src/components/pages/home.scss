@@ -95,3 +95,12 @@ $aqua: #53bbd0;
 .search-status--icon {
   max-width: 30rem;
 }
+
+.watchlist {
+  font-size: 2.5rem;
+  font-weight: 800;
+  a {
+    text-decoration: none;
+    color: grayscale($color: #000000);
+  }
+}

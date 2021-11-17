@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './style.scss'
 const Todo = ({text, todo, todos, setTodos}) => {
 
   const deleteHandler = () => {
@@ -18,8 +18,9 @@ const Todo = ({text, todo, todos, setTodos}) => {
   return (
     <div className="todo">
       <li>{text}</li>
-      <button onClick={completedHandler} className="trash">check</button>
-      <button onClick={deleteHandler} className="trash">trash</button>
+      {/* <lable>check</lable> */}
+      <input onChange={completedHandler} className="check" type='checkbox' />
+      <button onClick={deleteHandler}  className="trash">Remove</button>
     </div>
   )
 }

@@ -1,0 +1,68 @@
+.App {
+  background-color: rgba(57, 50, 71, 0.356);
+  a {
+    text-decoration: none;
+  }
+}
+.todo {
+  display: block;
+  text-align: center;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: larger;
+    font-weight: 600;
+  }
+}
+
+.App-header {
+    margin: 2rem 2rem 5rem auto;
+    display: flex;
+    font-weight: bolder;
+    color: darkred;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    padding-top: 1rem;
+  }
+
+  .flex {
+    display: flex;
+    line-height: 7rem;
+    justify-content: center;
+
+    &input {
+      font-size: x-large;
+    }
+
+    button {
+      background-color:rgba(0, 255, 200, 0.795);
+      border-radius: 10%;
+      margin-right: 5px;
+    }
+
+    
+  }
+  .select {
+    line-height: 5rem;
+  }
+
+  .input {
+    margin-right: 5px;
+    line-height: 2rem;
+  }
+  
+
+input[type="checkbox"] {
+  width: 2rem;
+}
+
+  .trash {
+    background-color: rgba(235, 14, 117, 0.623);
+    font-size: 500;
+    font-weight: 300;
+    text-align: center;
+    color: whitesmoke;
+  }
