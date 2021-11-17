@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // Internal Stylesheets
-import './RenderedCards.scss';
+import './cardpage.scss';
 // Assets
 import icon from '../../assets/icon-RickAndMorty-folks.svg';
 import Card from '../Card/Card';

@@ -1,3 +1,18 @@
+// @import '../../styles/utilities/breakpoints.scss';
+// @import '../../styles/utilities/colors.scss';
+$breakpoint-laptop-large: 1440px;
+$breakpoint-laptop: 1200px;
+$breakpoint-tablet-large: 1024px;
+$breakpoint-tablet: 960px;
+$breakpoint-mobile-large: 768px;
+$breakpoint-mobile: 480px;
+
+// Default Colors
+$white: #ffffff;
+$lighter-grey: #e7e7e7;
+$light-grey: #acacac;
+$dark-grey: #24282f;
+$aqua: #53bbd0;
 
 .home-header {
   display: grid;

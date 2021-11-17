@@ -2,13 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 // Internal Stylesheets
-import './Home.scss';
+import './home.scss';
 // Assets
 import logo from '../../assets/logo-RickAndMorty.svg';
 import characteropedia from '../../assets/Characteropedia.svg';
 import icon from '../../assets/icon-RickAndMorty-NoSearchResults.svg';
 // Components
-import RenderedCards from '../../components/RenderedCards/RenderedCards';
+import CardPage from '../CardPage/CardPage';
 
 const Home = () => {
   const [results, setResults] = useState(null);
@@ -131,7 +131,7 @@ const Home = () => {
       ) : (
         ''
       )}
-      {results ? <RenderedCards results={results} /> : ''}
+      {results ? <CardPage results={results} /> : ''}
     </section>
   );
 };
